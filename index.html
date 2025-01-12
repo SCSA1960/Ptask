@@ -3,25 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grade 9 PTASK Home Page</title>
     <style>
-        .div1{
-            height: 100vh;
-            background-color: bisque;
-            
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav .logo span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        .welcome .welcome-logo {
+            flex: 1;
+            text-align: left;
+        }
+
+        .welcome .welcome-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .welcome .welcome-message {
+            flex: 2;
+            text-align:center;
+        }
+
+        .welcome .welcome-message h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .welcome .welcome-message p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section Page */
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        .section .buttons {
+            margin-top: 50px;
+        }
+
+        .section .buttons a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #6a11cb;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .section .buttons a:hover {
+            background-color: #2575fc;
         }
     </style>
 </head>
 <body>
-  <div style="text-align: center;">
-    <img src="OIP (3).jpg" alt="" width="100px" height="100px" style="padding: 10px;">
-    <img src="OIP (3).jpg" alt="" width="100px" height="100px" style="padding: 10px;"> 
-    <img src="OIP (3).jpg" alt="" width="100px" height="100px" style="padding: 10px;">
-  </div>
-  <div class="div1">
-     <div>
+    <nav>
+        <div class="logo">
+            <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/321797531_561080168819760_8077840499697319914_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeERdqV-xUmCZwv6t28Oet-Zpkb0Sqko9TymRvRKqSj1PIPC9Z4_mSnUL0o248ZsWt6dlKM1rLNpLXrF5-nc6DiE&_nc_ohc=N5UNbdY_zSUQ7kNvgEm_zlu&_nc_oc=Adh5AyCYbgS2kpOYaDtO0kh6fLJbh839ySLzPmx7p9qWzgoKf0lGKaBBcQq4ZN-yuiw&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=AQaYAQaFrfO7zX_qqwsFEzo&oh=00_AYB6C54UIK9jI-ixD8W3xX37n51JxvYTy1GC1bHaw_rsiA&oe=6789B783" alt="Logo">
+            <span>Grade 9 PTASK</span>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#section">Section</a></li>
+        </ul>
+    </nav>
 
-     </div>
-  </div>
+    <div class="welcome" id="home">
+        <div class="welcome-logo">
+            <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t39.30808-6/321797531_561080168819760_8077840499697319914_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeERdqV-xUmCZwv6t28Oet-Zpkb0Sqko9TymRvRKqSj1PIPC9Z4_mSnUL0o248ZsWt6dlKM1rLNpLXrF5-nc6DiE&_nc_ohc=N5UNbdY_zSUQ7kNvgEm_zlu&_nc_oc=Adh5AyCYbgS2kpOYaDtO0kh6fLJbh839ySLzPmx7p9qWzgoKf0lGKaBBcQq4ZN-yuiw&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&_nc_gid=AQaYAQaFrfO7zX_qqwsFEzo&oh=00_AYB6C54UIK9jI-ixD8W3xX37n51JxvYTy1GC1bHaw_rsiA&oe=6789B783" alt="Welcome Logo" width="350px">
+        </div>
+        <div class="welcome-message">
+            <h1>Welcome to Grade 9 PTASK</h1>
+            <p>Discover engaging projects and activities designed to enhance your skills and knowledge.</p>
+        </div>
+    </div>
+
+    <div class="section" id="section">
+        <h2>About the Section</h2>
+        <p>This section highlights the key areas of focus for Grade 9 PTASK. From hands-on projects to collaborative tasks, students are encouraged to explore and develop their potential in various fields.</p>
+        <div class="buttons">
+            <a href=" "> Grade 9 St. Lucy</a>
+            <a href=" "> Grade 9 St. Thomas</a>
+            <a href=" "> Grade 9 St. Vincent</a>
+        </div>
+    </div>
 </body>
 </html>
